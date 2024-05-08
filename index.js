@@ -13,9 +13,9 @@ const landingRoutes = require('./routes/landingRoutes')
 
 const app = express()
 
-app.engine('hbs', engines.handlebars)
+app.engine('ejs', engines.ejs)
 app.set('views', path.join(__dirname, "views"))
-app.set('view engine', 'hbs')
+app.set('view engine', 'ejs')
 
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))

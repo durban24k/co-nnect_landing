@@ -17,3 +17,8 @@ module.exports.creatorsPage = (req,res)=>{
      res.set('Cache-Control','public, max-age=180, s-maxage=300')
      res.render("content_creators",{layout:false})
 }
+
+module.exports.privacyPolicyPage = (req,res)=>{
+     res.set('Cache-Control','public, max-age=180, s-maxage=300')
+     res.render("privacy_center",{layout:false})
+}
