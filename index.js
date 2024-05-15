@@ -10,6 +10,7 @@ const path = require('path')
 // )
 
 const landingRoutes = require('./routes/landingRoutes')
+const engineRoutes = require('./routes/engineRoutes')
 
 const app = express()
 
@@ -22,5 +23,6 @@ app.use(express.urlencoded({extended:false}))
 
 // Routes
 app.use(landingRoutes)
+app.use(engineRoutes)
 
 exports.app = functions.https.onRequest(app)

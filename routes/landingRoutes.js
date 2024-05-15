@@ -10,8 +10,6 @@ router.get('/start-here',landingRoute.onBoardPage)
 
 router.get('/advertisers',landingRoute.brandPage)
 
-router.get('/content-creators',landingRoute.creatorsPage)
-
 router.get('/privacy-center',landingRoute.privacyPolicyPage)
 
 module.exports = router
